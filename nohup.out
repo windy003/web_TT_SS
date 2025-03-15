@@ -134,3 +134,694 @@ Attaching to web_tt_ss_web_1
 [36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:43:22 +0000] 'GET /static/180x180.png HTTP/1.1' 404 207 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
 [36mweb_1  |[0m [2025-03-15 11:43:27 +0000] [8] [DEBUG] GET /
 [36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:43:27 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+Recreating web_tt_ss_web_1 ... 
+[36mweb_1  |[0m [2025-03-15 11:48:03 +0000] [1] [INFO] Handling signal: term
+[36mweb_1  |[0m [2025-03-15 11:48:03 +0000] [10] [INFO] Worker exiting (pid: 10)
+[36mweb_1  |[0m [2025-03-15 11:48:03 +0000] [7] [INFO] Worker exiting (pid: 7)
+[36mweb_1  |[0m [2025-03-15 11:48:03 +0000] [8] [INFO] Worker exiting (pid: 8)
+[36mweb_1  |[0m [2025-03-15 11:48:03 +0000] [9] [INFO] Worker exiting (pid: 9)
+[36mweb_1  |[0m [2025-03-15 11:48:04 +0000] [1] [INFO] Shutting down: Master
+[36mweb_tt_ss_web_1 exited with code 0
+[0mRecreating web_tt_ss_web_1 ... done
+Attaching to web_tt_ss_web_1
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [DEBUG] Current configuration:
+[36mweb_1  |[0m   config: ./gunicorn.conf.py
+[36mweb_1  |[0m   wsgi_app: None
+[36mweb_1  |[0m   bind: ['0.0.0.0:5003']
+[36mweb_1  |[0m   backlog: 2048
+[36mweb_1  |[0m   workers: 4
+[36mweb_1  |[0m   worker_class: sync
+[36mweb_1  |[0m   threads: 1
+[36mweb_1  |[0m   worker_connections: 1000
+[36mweb_1  |[0m   max_requests: 1000
+[36mweb_1  |[0m   max_requests_jitter: 50
+[36mweb_1  |[0m   timeout: 120
+[36mweb_1  |[0m   graceful_timeout: 30
+[36mweb_1  |[0m   keepalive: 5
+[36mweb_1  |[0m   limit_request_line: 4094
+[36mweb_1  |[0m   limit_request_fields: 100
+[36mweb_1  |[0m   limit_request_field_size: 8190
+[36mweb_1  |[0m   reload: False
+[36mweb_1  |[0m   reload_engine: auto
+[36mweb_1  |[0m   reload_extra_files: []
+[36mweb_1  |[0m   spew: False
+[36mweb_1  |[0m   check_config: False
+[36mweb_1  |[0m   print_config: False
+[36mweb_1  |[0m   preload_app: False
+[36mweb_1  |[0m   sendfile: None
+[36mweb_1  |[0m   reuse_port: False
+[36mweb_1  |[0m   chdir: /app
+[36mweb_1  |[0m   daemon: False
+[36mweb_1  |[0m   raw_env: []
+[36mweb_1  |[0m   pidfile: None
+[36mweb_1  |[0m   worker_tmp_dir: None
+[36mweb_1  |[0m   user: 1000
+[36mweb_1  |[0m   group: 1000
+[36mweb_1  |[0m   umask: 0
+[36mweb_1  |[0m   initgroups: False
+[36mweb_1  |[0m   tmp_upload_dir: None
+[36mweb_1  |[0m   secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+[36mweb_1  |[0m   forwarded_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   accesslog: -
+[36mweb_1  |[0m   disable_redirect_access_to_syslog: False
+[36mweb_1  |[0m   access_log_format: %(h)s %(l)s %(u)s %(t)s '%(r)s' %(s)s %(b)s '%(f)s' '%(a)s'
+[36mweb_1  |[0m   errorlog: -
+[36mweb_1  |[0m   loglevel: debug
+[36mweb_1  |[0m   capture_output: False
+[36mweb_1  |[0m   logger_class: gunicorn.glogging.Logger
+[36mweb_1  |[0m   logconfig: None
+[36mweb_1  |[0m   logconfig_dict: {}
+[36mweb_1  |[0m   syslog_addr: udp://localhost:514
+[36mweb_1  |[0m   syslog: False
+[36mweb_1  |[0m   syslog_prefix: None
+[36mweb_1  |[0m   syslog_facility: user
+[36mweb_1  |[0m   enable_stdio_inheritance: False
+[36mweb_1  |[0m   statsd_host: None
+[36mweb_1  |[0m   dogstatsd_tags: 
+[36mweb_1  |[0m   statsd_prefix: 
+[36mweb_1  |[0m   proc_name: None
+[36mweb_1  |[0m   default_proc_name: app:app
+[36mweb_1  |[0m   pythonpath: None
+[36mweb_1  |[0m   paste: None
+[36mweb_1  |[0m   on_starting: <function OnStarting.on_starting at 0x7f198270d4c0>
+[36mweb_1  |[0m   on_reload: <function OnReload.on_reload at 0x7f198270d5e0>
+[36mweb_1  |[0m   when_ready: <function WhenReady.when_ready at 0x7f198270d700>
+[36mweb_1  |[0m   pre_fork: <function Prefork.pre_fork at 0x7f198270d820>
+[36mweb_1  |[0m   post_fork: <function Postfork.post_fork at 0x7f198270d940>
+[36mweb_1  |[0m   post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f198270da60>
+[36mweb_1  |[0m   worker_int: <function WorkerInt.worker_int at 0x7f198270db80>
+[36mweb_1  |[0m   worker_abort: <function WorkerAbort.worker_abort at 0x7f198270dca0>
+[36mweb_1  |[0m   pre_exec: <function PreExec.pre_exec at 0x7f198270ddc0>
+[36mweb_1  |[0m   pre_request: <function PreRequest.pre_request at 0x7f198270dee0>
+[36mweb_1  |[0m   post_request: <function PostRequest.post_request at 0x7f198270df70>
+[36mweb_1  |[0m   child_exit: <function ChildExit.child_exit at 0x7f19827210d0>
+[36mweb_1  |[0m   worker_exit: <function WorkerExit.worker_exit at 0x7f19827211f0>
+[36mweb_1  |[0m   nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1982721310>
+[36mweb_1  |[0m   on_exit: <function OnExit.on_exit at 0x7f1982721430>
+[36mweb_1  |[0m   proxy_protocol: False
+[36mweb_1  |[0m   proxy_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   keyfile: None
+[36mweb_1  |[0m   certfile: None
+[36mweb_1  |[0m   ssl_version: 2
+[36mweb_1  |[0m   cert_reqs: 0
+[36mweb_1  |[0m   ca_certs: None
+[36mweb_1  |[0m   suppress_ragged_eofs: True
+[36mweb_1  |[0m   do_handshake_on_connect: False
+[36mweb_1  |[0m   ciphers: None
+[36mweb_1  |[0m   raw_paste_global_conf: []
+[36mweb_1  |[0m   strip_header_spaces: False
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [DEBUG] Arbiter booted
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [INFO] Listening at: http://0.0.0.0:5003 (1)
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [INFO] Using worker: sync
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [7] [INFO] Booting worker with pid: 7
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [8] [INFO] Booting worker with pid: 8
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [9] [INFO] Booting worker with pid: 9
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [10] [INFO] Booting worker with pid: 10
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [DEBUG] 4 workers
+[36mweb_1  |[0m [2025-03-15 11:48:34 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:48:34 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 11:48:41 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:48:41 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:48:56 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:48:56 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:49:20 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:49:20 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+Stopping web_tt_ss_web_1   ... 
+Stopping web_tt_ss_web_1   ... done
+Gracefully stopping... (press Ctrl+C again to force)
+Starting web_tt_ss_web_1 ... 
+Starting web_tt_ss_web_1 ... done
+Attaching to web_tt_ss_web_1
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [DEBUG] Current configuration:
+[36mweb_1  |[0m   config: ./gunicorn.conf.py
+[36mweb_1  |[0m   wsgi_app: None
+[36mweb_1  |[0m   bind: ['0.0.0.0:5003']
+[36mweb_1  |[0m   backlog: 2048
+[36mweb_1  |[0m   workers: 4
+[36mweb_1  |[0m   worker_class: sync
+[36mweb_1  |[0m   threads: 1
+[36mweb_1  |[0m   worker_connections: 1000
+[36mweb_1  |[0m   max_requests: 1000
+[36mweb_1  |[0m   max_requests_jitter: 50
+[36mweb_1  |[0m   timeout: 120
+[36mweb_1  |[0m   graceful_timeout: 30
+[36mweb_1  |[0m   keepalive: 5
+[36mweb_1  |[0m   limit_request_line: 4094
+[36mweb_1  |[0m   limit_request_fields: 100
+[36mweb_1  |[0m   limit_request_field_size: 8190
+[36mweb_1  |[0m   reload: False
+[36mweb_1  |[0m   reload_engine: auto
+[36mweb_1  |[0m   reload_extra_files: []
+[36mweb_1  |[0m   spew: False
+[36mweb_1  |[0m   check_config: False
+[36mweb_1  |[0m   print_config: False
+[36mweb_1  |[0m   preload_app: False
+[36mweb_1  |[0m   sendfile: None
+[36mweb_1  |[0m   reuse_port: False
+[36mweb_1  |[0m   chdir: /app
+[36mweb_1  |[0m   daemon: False
+[36mweb_1  |[0m   raw_env: []
+[36mweb_1  |[0m   pidfile: None
+[36mweb_1  |[0m   worker_tmp_dir: None
+[36mweb_1  |[0m   user: 1000
+[36mweb_1  |[0m   group: 1000
+[36mweb_1  |[0m   umask: 0
+[36mweb_1  |[0m   initgroups: False
+[36mweb_1  |[0m   tmp_upload_dir: None
+[36mweb_1  |[0m   secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+[36mweb_1  |[0m   forwarded_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   accesslog: -
+[36mweb_1  |[0m   disable_redirect_access_to_syslog: False
+[36mweb_1  |[0m   access_log_format: %(h)s %(l)s %(u)s %(t)s '%(r)s' %(s)s %(b)s '%(f)s' '%(a)s'
+[36mweb_1  |[0m   errorlog: -
+[36mweb_1  |[0m   loglevel: debug
+[36mweb_1  |[0m   capture_output: False
+[36mweb_1  |[0m   logger_class: gunicorn.glogging.Logger
+[36mweb_1  |[0m   logconfig: None
+[36mweb_1  |[0m   logconfig_dict: {}
+[36mweb_1  |[0m   syslog_addr: udp://localhost:514
+[36mweb_1  |[0m   syslog: False
+[36mweb_1  |[0m   syslog_prefix: None
+[36mweb_1  |[0m   syslog_facility: user
+[36mweb_1  |[0m   enable_stdio_inheritance: False
+[36mweb_1  |[0m   statsd_host: None
+[36mweb_1  |[0m   dogstatsd_tags: 
+[36mweb_1  |[0m   statsd_prefix: 
+[36mweb_1  |[0m   proc_name: None
+[36mweb_1  |[0m   default_proc_name: app:app
+[36mweb_1  |[0m   pythonpath: None
+[36mweb_1  |[0m   paste: None
+[36mweb_1  |[0m   on_starting: <function OnStarting.on_starting at 0x7f60a0dfc4c0>
+[36mweb_1  |[0m   on_reload: <function OnReload.on_reload at 0x7f60a0dfc5e0>
+[36mweb_1  |[0m   when_ready: <function WhenReady.when_ready at 0x7f60a0dfc700>
+[36mweb_1  |[0m   pre_fork: <function Prefork.pre_fork at 0x7f60a0dfc820>
+[36mweb_1  |[0m   post_fork: <function Postfork.post_fork at 0x7f60a0dfc940>
+[36mweb_1  |[0m   post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f60a0dfca60>
+[36mweb_1  |[0m   worker_int: <function WorkerInt.worker_int at 0x7f60a0dfcb80>
+[36mweb_1  |[0m   worker_abort: <function WorkerAbort.worker_abort at 0x7f60a0dfcca0>
+[36mweb_1  |[0m   pre_exec: <function PreExec.pre_exec at 0x7f60a0dfcdc0>
+[36mweb_1  |[0m   pre_request: <function PreRequest.pre_request at 0x7f60a0dfcee0>
+[36mweb_1  |[0m   post_request: <function PostRequest.post_request at 0x7f60a0dfcf70>
+[36mweb_1  |[0m   child_exit: <function ChildExit.child_exit at 0x7f60a0e100d0>
+[36mweb_1  |[0m   worker_exit: <function WorkerExit.worker_exit at 0x7f60a0e101f0>
+[36mweb_1  |[0m   nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f60a0e10310>
+[36mweb_1  |[0m   on_exit: <function OnExit.on_exit at 0x7f60a0e10430>
+[36mweb_1  |[0m   proxy_protocol: False
+[36mweb_1  |[0m   proxy_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   keyfile: None
+[36mweb_1  |[0m   certfile: None
+[36mweb_1  |[0m   ssl_version: 2
+[36mweb_1  |[0m   cert_reqs: 0
+[36mweb_1  |[0m   ca_certs: None
+[36mweb_1  |[0m   suppress_ragged_eofs: True
+[36mweb_1  |[0m   do_handshake_on_connect: False
+[36mweb_1  |[0m   ciphers: None
+[36mweb_1  |[0m   raw_paste_global_conf: []
+[36mweb_1  |[0m   strip_header_spaces: False
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [DEBUG] Arbiter booted
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [INFO] Listening at: http://0.0.0.0:5003 (1)
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [INFO] Using worker: sync
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [7] [INFO] Booting worker with pid: 7
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [8] [INFO] Booting worker with pid: 8
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [9] [INFO] Booting worker with pid: 9
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [10] [INFO] Booting worker with pid: 10
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [DEBUG] 4 workers
+[36mweb_1  |[0m [2025-03-15 11:50:37 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:50:37 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:50:53 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:50:53 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:51:34 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:51:34 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:51:39 +0000] [7] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:51:39 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 'http://10.254.1.49:5003/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:04 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:04 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:14 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:14 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:16 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:16 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:45 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:45 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:54:08 +0000] [8] [DEBUG] POST /
+[36mweb_1  |[0m [2025-03-15 11:54:27,424] ERROR in app: Exception on / [POST]
+[36mweb_1  |[0m Traceback (most recent call last):
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+[36mweb_1  |[0m     response = self.full_dispatch_request()
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 920, in full_dispatch_request
+[36mweb_1  |[0m     return self.finalize_request(rv)
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 939, in finalize_request
+[36mweb_1  |[0m     response = self.make_response(rv)
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1212, in make_response
+[36mweb_1  |[0m     raise TypeError(
+[36mweb_1  |[0m TypeError: The view function for 'index' did not return a valid response. The function either returned None or ended without a return statement.
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 爬取过程中出现错误: 
+[36mweb_1  |[0m No element found.
+[36mweb_1  |[0m Method: ele()
+[36mweb_1  |[0m Arguments: {'locator': 'xpath://h1', 'index': 1, 'timeout': 10}
+[36mweb_1  |[0m Version: 4.1.0.17
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:54:27 +0000] 'POST / HTTP/1.1' 500 265 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:54:42 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:54:42 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:54:52 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:54:52 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:55:07 +0000] [10] [DEBUG] POST /
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 文章标题: 战斗机训练失事，飞行员成功跳伞
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:55:32 +0000] 'POST / HTTP/1.1' 200 32581 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:56:28 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:56:28 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+web_tt_ss_web_1 is up-to-date
+Attaching to web_tt_ss_web_1
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [DEBUG] Current configuration:
+[36mweb_1  |[0m   config: ./gunicorn.conf.py
+[36mweb_1  |[0m   wsgi_app: None
+[36mweb_1  |[0m   bind: ['0.0.0.0:5003']
+[36mweb_1  |[0m   backlog: 2048
+[36mweb_1  |[0m   workers: 4
+[36mweb_1  |[0m   worker_class: sync
+[36mweb_1  |[0m   threads: 1
+[36mweb_1  |[0m   worker_connections: 1000
+[36mweb_1  |[0m   max_requests: 1000
+[36mweb_1  |[0m   max_requests_jitter: 50
+[36mweb_1  |[0m   timeout: 120
+[36mweb_1  |[0m   graceful_timeout: 30
+[36mweb_1  |[0m   keepalive: 5
+[36mweb_1  |[0m   limit_request_line: 4094
+[36mweb_1  |[0m   limit_request_fields: 100
+[36mweb_1  |[0m   limit_request_field_size: 8190
+[36mweb_1  |[0m   reload: False
+[36mweb_1  |[0m   reload_engine: auto
+[36mweb_1  |[0m   reload_extra_files: []
+[36mweb_1  |[0m   spew: False
+[36mweb_1  |[0m   check_config: False
+[36mweb_1  |[0m   print_config: False
+[36mweb_1  |[0m   preload_app: False
+[36mweb_1  |[0m   sendfile: None
+[36mweb_1  |[0m   reuse_port: False
+[36mweb_1  |[0m   chdir: /app
+[36mweb_1  |[0m   daemon: False
+[36mweb_1  |[0m   raw_env: []
+[36mweb_1  |[0m   pidfile: None
+[36mweb_1  |[0m   worker_tmp_dir: None
+[36mweb_1  |[0m   user: 1000
+[36mweb_1  |[0m   group: 1000
+[36mweb_1  |[0m   umask: 0
+[36mweb_1  |[0m   initgroups: False
+[36mweb_1  |[0m   tmp_upload_dir: None
+[36mweb_1  |[0m   secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+[36mweb_1  |[0m   forwarded_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   accesslog: -
+[36mweb_1  |[0m   disable_redirect_access_to_syslog: False
+[36mweb_1  |[0m   access_log_format: %(h)s %(l)s %(u)s %(t)s '%(r)s' %(s)s %(b)s '%(f)s' '%(a)s'
+[36mweb_1  |[0m   errorlog: -
+[36mweb_1  |[0m   loglevel: debug
+[36mweb_1  |[0m   capture_output: False
+[36mweb_1  |[0m   logger_class: gunicorn.glogging.Logger
+[36mweb_1  |[0m   logconfig: None
+[36mweb_1  |[0m   logconfig_dict: {}
+[36mweb_1  |[0m   syslog_addr: udp://localhost:514
+[36mweb_1  |[0m   syslog: False
+[36mweb_1  |[0m   syslog_prefix: None
+[36mweb_1  |[0m   syslog_facility: user
+[36mweb_1  |[0m   enable_stdio_inheritance: False
+[36mweb_1  |[0m   statsd_host: None
+[36mweb_1  |[0m   dogstatsd_tags: 
+[36mweb_1  |[0m   statsd_prefix: 
+[36mweb_1  |[0m   proc_name: None
+[36mweb_1  |[0m   default_proc_name: app:app
+[36mweb_1  |[0m   pythonpath: None
+[36mweb_1  |[0m   paste: None
+[36mweb_1  |[0m   on_starting: <function OnStarting.on_starting at 0x7f198270d4c0>
+[36mweb_1  |[0m   on_reload: <function OnReload.on_reload at 0x7f198270d5e0>
+[36mweb_1  |[0m   when_ready: <function WhenReady.when_ready at 0x7f198270d700>
+[36mweb_1  |[0m   pre_fork: <function Prefork.pre_fork at 0x7f198270d820>
+[36mweb_1  |[0m   post_fork: <function Postfork.post_fork at 0x7f198270d940>
+[36mweb_1  |[0m   post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f198270da60>
+[36mweb_1  |[0m   worker_int: <function WorkerInt.worker_int at 0x7f198270db80>
+[36mweb_1  |[0m   worker_abort: <function WorkerAbort.worker_abort at 0x7f198270dca0>
+[36mweb_1  |[0m   pre_exec: <function PreExec.pre_exec at 0x7f198270ddc0>
+[36mweb_1  |[0m   pre_request: <function PreRequest.pre_request at 0x7f198270dee0>
+[36mweb_1  |[0m   post_request: <function PostRequest.post_request at 0x7f198270df70>
+[36mweb_1  |[0m   child_exit: <function ChildExit.child_exit at 0x7f19827210d0>
+[36mweb_1  |[0m   worker_exit: <function WorkerExit.worker_exit at 0x7f19827211f0>
+[36mweb_1  |[0m   nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f1982721310>
+[36mweb_1  |[0m   on_exit: <function OnExit.on_exit at 0x7f1982721430>
+[36mweb_1  |[0m   proxy_protocol: False
+[36mweb_1  |[0m   proxy_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   keyfile: None
+[36mweb_1  |[0m   certfile: None
+[36mweb_1  |[0m   ssl_version: 2
+[36mweb_1  |[0m   cert_reqs: 0
+[36mweb_1  |[0m   ca_certs: None
+[36mweb_1  |[0m   suppress_ragged_eofs: True
+[36mweb_1  |[0m   do_handshake_on_connect: False
+[36mweb_1  |[0m   ciphers: None
+[36mweb_1  |[0m   raw_paste_global_conf: []
+[36mweb_1  |[0m   strip_header_spaces: False
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [DEBUG] Arbiter booted
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [INFO] Listening at: http://0.0.0.0:5003 (1)
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [INFO] Using worker: sync
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [7] [INFO] Booting worker with pid: 7
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [8] [INFO] Booting worker with pid: 8
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [9] [INFO] Booting worker with pid: 9
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [10] [INFO] Booting worker with pid: 10
+[36mweb_1  |[0m [2025-03-15 11:48:05 +0000] [1] [DEBUG] 4 workers
+[36mweb_1  |[0m [2025-03-15 11:48:34 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:48:34 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 11:48:41 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:48:41 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:48:56 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:48:56 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:49:20 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:49:20 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:50:08 +0000] [1] [INFO] Handling signal: term
+[36mweb_1  |[0m [2025-03-15 11:50:08 +0000] [8] [INFO] Worker exiting (pid: 8)
+[36mweb_1  |[0m [2025-03-15 11:50:08 +0000] [9] [INFO] Worker exiting (pid: 9)
+[36mweb_1  |[0m [2025-03-15 11:50:08 +0000] [7] [INFO] Worker exiting (pid: 7)
+[36mweb_1  |[0m [2025-03-15 11:50:08 +0000] [10] [INFO] Worker exiting (pid: 10)
+[36mweb_1  |[0m [2025-03-15 11:50:08 +0000] [1] [INFO] Shutting down: Master
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [DEBUG] Current configuration:
+[36mweb_1  |[0m   config: ./gunicorn.conf.py
+[36mweb_1  |[0m   wsgi_app: None
+[36mweb_1  |[0m   bind: ['0.0.0.0:5003']
+[36mweb_1  |[0m   backlog: 2048
+[36mweb_1  |[0m   workers: 4
+[36mweb_1  |[0m   worker_class: sync
+[36mweb_1  |[0m   threads: 1
+[36mweb_1  |[0m   worker_connections: 1000
+[36mweb_1  |[0m   max_requests: 1000
+[36mweb_1  |[0m   max_requests_jitter: 50
+[36mweb_1  |[0m   timeout: 120
+[36mweb_1  |[0m   graceful_timeout: 30
+[36mweb_1  |[0m   keepalive: 5
+[36mweb_1  |[0m   limit_request_line: 4094
+[36mweb_1  |[0m   limit_request_fields: 100
+[36mweb_1  |[0m   limit_request_field_size: 8190
+[36mweb_1  |[0m   reload: False
+[36mweb_1  |[0m   reload_engine: auto
+[36mweb_1  |[0m   reload_extra_files: []
+[36mweb_1  |[0m   spew: False
+[36mweb_1  |[0m   check_config: False
+[36mweb_1  |[0m   print_config: False
+[36mweb_1  |[0m   preload_app: False
+[36mweb_1  |[0m   sendfile: None
+[36mweb_1  |[0m   reuse_port: False
+[36mweb_1  |[0m   chdir: /app
+[36mweb_1  |[0m   daemon: False
+[36mweb_1  |[0m   raw_env: []
+[36mweb_1  |[0m   pidfile: None
+[36mweb_1  |[0m   worker_tmp_dir: None
+[36mweb_1  |[0m   user: 1000
+[36mweb_1  |[0m   group: 1000
+[36mweb_1  |[0m   umask: 0
+[36mweb_1  |[0m   initgroups: False
+[36mweb_1  |[0m   tmp_upload_dir: None
+[36mweb_1  |[0m   secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+[36mweb_1  |[0m   forwarded_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   accesslog: -
+[36mweb_1  |[0m   disable_redirect_access_to_syslog: False
+[36mweb_1  |[0m   access_log_format: %(h)s %(l)s %(u)s %(t)s '%(r)s' %(s)s %(b)s '%(f)s' '%(a)s'
+[36mweb_1  |[0m   errorlog: -
+[36mweb_1  |[0m   loglevel: debug
+[36mweb_1  |[0m   capture_output: False
+[36mweb_1  |[0m   logger_class: gunicorn.glogging.Logger
+[36mweb_1  |[0m   logconfig: None
+[36mweb_1  |[0m   logconfig_dict: {}
+[36mweb_1  |[0m   syslog_addr: udp://localhost:514
+[36mweb_1  |[0m   syslog: False
+[36mweb_1  |[0m   syslog_prefix: None
+[36mweb_1  |[0m   syslog_facility: user
+[36mweb_1  |[0m   enable_stdio_inheritance: False
+[36mweb_1  |[0m   statsd_host: None
+[36mweb_1  |[0m   dogstatsd_tags: 
+[36mweb_1  |[0m   statsd_prefix: 
+[36mweb_1  |[0m   proc_name: None
+[36mweb_1  |[0m   default_proc_name: app:app
+[36mweb_1  |[0m   pythonpath: None
+[36mweb_1  |[0m   paste: None
+[36mweb_1  |[0m   on_starting: <function OnStarting.on_starting at 0x7f60a0dfc4c0>
+[36mweb_1  |[0m   on_reload: <function OnReload.on_reload at 0x7f60a0dfc5e0>
+[36mweb_1  |[0m   when_ready: <function WhenReady.when_ready at 0x7f60a0dfc700>
+[36mweb_1  |[0m   pre_fork: <function Prefork.pre_fork at 0x7f60a0dfc820>
+[36mweb_1  |[0m   post_fork: <function Postfork.post_fork at 0x7f60a0dfc940>
+[36mweb_1  |[0m   post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f60a0dfca60>
+[36mweb_1  |[0m   worker_int: <function WorkerInt.worker_int at 0x7f60a0dfcb80>
+[36mweb_1  |[0m   worker_abort: <function WorkerAbort.worker_abort at 0x7f60a0dfcca0>
+[36mweb_1  |[0m   pre_exec: <function PreExec.pre_exec at 0x7f60a0dfcdc0>
+[36mweb_1  |[0m   pre_request: <function PreRequest.pre_request at 0x7f60a0dfcee0>
+[36mweb_1  |[0m   post_request: <function PostRequest.post_request at 0x7f60a0dfcf70>
+[36mweb_1  |[0m   child_exit: <function ChildExit.child_exit at 0x7f60a0e100d0>
+[36mweb_1  |[0m   worker_exit: <function WorkerExit.worker_exit at 0x7f60a0e101f0>
+[36mweb_1  |[0m   nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f60a0e10310>
+[36mweb_1  |[0m   on_exit: <function OnExit.on_exit at 0x7f60a0e10430>
+[36mweb_1  |[0m   proxy_protocol: False
+[36mweb_1  |[0m   proxy_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   keyfile: None
+[36mweb_1  |[0m   certfile: None
+[36mweb_1  |[0m   ssl_version: 2
+[36mweb_1  |[0m   cert_reqs: 0
+[36mweb_1  |[0m   ca_certs: None
+[36mweb_1  |[0m   suppress_ragged_eofs: True
+[36mweb_1  |[0m   do_handshake_on_connect: False
+[36mweb_1  |[0m   ciphers: None
+[36mweb_1  |[0m   raw_paste_global_conf: []
+[36mweb_1  |[0m   strip_header_spaces: False
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [DEBUG] Arbiter booted
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [INFO] Listening at: http://0.0.0.0:5003 (1)
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [INFO] Using worker: sync
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [7] [INFO] Booting worker with pid: 7
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [8] [INFO] Booting worker with pid: 8
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [9] [INFO] Booting worker with pid: 9
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [10] [INFO] Booting worker with pid: 10
+[36mweb_1  |[0m [2025-03-15 11:50:27 +0000] [1] [DEBUG] 4 workers
+[36mweb_1  |[0m [2025-03-15 11:50:37 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:50:37 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:50:53 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:50:53 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:51:34 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:51:34 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:51:39 +0000] [7] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:51:39 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 'http://10.254.1.49:5003/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:04 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:04 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:14 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:14 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:16 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:16 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:52:45 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:52:45 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:54:08 +0000] [8] [DEBUG] POST /
+[36mweb_1  |[0m [2025-03-15 11:54:27,424] ERROR in app: Exception on / [POST]
+[36mweb_1  |[0m Traceback (most recent call last):
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+[36mweb_1  |[0m     response = self.full_dispatch_request()
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 920, in full_dispatch_request
+[36mweb_1  |[0m     return self.finalize_request(rv)
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 939, in finalize_request
+[36mweb_1  |[0m     response = self.make_response(rv)
+[36mweb_1  |[0m   File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1212, in make_response
+[36mweb_1  |[0m     raise TypeError(
+[36mweb_1  |[0m TypeError: The view function for 'index' did not return a valid response. The function either returned None or ended without a return statement.
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 爬取过程中出现错误: 
+[36mweb_1  |[0m No element found.
+[36mweb_1  |[0m Method: ele()
+[36mweb_1  |[0m Arguments: {'locator': 'xpath://h1', 'index': 1, 'timeout': 10}
+[36mweb_1  |[0m Version: 4.1.0.17
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:54:27 +0000] 'POST / HTTP/1.1' 500 265 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:54:42 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:54:42 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:54:52 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:54:52 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:55:07 +0000] [10] [DEBUG] POST /
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 文章标题: 战斗机训练失事，飞行员成功跳伞
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:55:32 +0000] 'POST / HTTP/1.1' 200 32581 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 11:56:28 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:11:56:28 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:15:34 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:15:34 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:15:34 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible)'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:15:34 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible)'
+[36mweb_1  |[0m [2025-03-15 12:28:39 +0000] [10] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m [2025-03-15 12:28:39 +0000] [10] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:28:39 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:28:39 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 12:40:14 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:40:14 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:40:14 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:40:14 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 12:45:13 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:45:13 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:13 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:13 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:45:18 +0000] [10] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m [2025-03-15 12:45:18 +0000] [10] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:18 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:18 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:45:27 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:45:27 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:27 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:27 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:45:58 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:45:58 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:58 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:45:58 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:46:22 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:46:22 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:46:22 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:46:22 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:55:16 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:55:16 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:55:16 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:55:16 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:56:07 +0000] [9] [DEBUG] POST /
+[36mweb_1  |[0m [2025-03-15 12:56:07 +0000] [9] [DEBUG] POST /
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 文章标题: 韩媒：美国正式确认将韩国列入“敏感国家”，或在政治与外交上引发巨大波澜
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 文章标题: 韩媒：美国正式确认将韩国列入“敏感国家”，或在政治与外交上引发巨大波澜
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:56:24 +0000] 'POST / HTTP/1.1' 200 34244 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:56:24 +0000] 'POST / HTTP/1.1' 200 34244 'https://windyzhou.org/' 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 OPR/87.0.0.0'
+[36mweb_1  |[0m [2025-03-15 12:57:26 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:57:26 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:57:26 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:57:26 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 12:57:27 +0000] [8] [DEBUG] GET /favicon.ico
+[36mweb_1  |[0m [2025-03-15 12:57:27 +0000] [8] [DEBUG] GET /favicon.ico
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:57:27 +0000] 'GET /favicon.ico HTTP/1.1' 404 207 'http://windyzhou.org/' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:57:27 +0000] 'GET /favicon.ico HTTP/1.1' 404 207 'http://windyzhou.org/' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 12:57:49 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 12:57:49 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:57:49 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:57:49 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 12:58:10 +0000] [9] [DEBUG] POST /
+[36mweb_1  |[0m [2025-03-15 12:58:10 +0000] [9] [DEBUG] POST /
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 文章标题: 韩媒：美国正式确认将韩国列入“敏感国家”，或在政治与外交上引发巨大波澜
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:58:23 +0000] 'POST / HTTP/1.1' 200 34244 'http://windyzhou.org/' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 文章标题: 韩媒：美国正式确认将韩国列入“敏感国家”，或在政治与外交上引发巨大波澜
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:12:58:23 +0000] 'POST / HTTP/1.1' 200 34244 'http://windyzhou.org/' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 13:18:17 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:18:17 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 13:18:17 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:18:17 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 13:18:18 +0000] [8] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m [2025-03-15 13:18:18 +0000] [8] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:18:18 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:18:18 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 13:20:48 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 13:20:48 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:20:48 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:20:48 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 13:20:57 +0000] [8] [DEBUG] POST /
+[36mweb_1  |[0m [2025-03-15 13:20:57 +0000] [8] [DEBUG] POST /
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 文章标题: 10天15亿，智谱屯粮
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:21:17 +0000] 'POST / HTTP/1.1' 200 38518 'http://windyzhou.org/' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m 已启动无头浏览器...
+[36mweb_1  |[0m 正在加载页面...
+[36mweb_1  |[0m 文章标题: 10天15亿，智谱屯粮
+[36mweb_1  |[0m 已关闭浏览器
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:13:21:17 +0000] 'POST / HTTP/1.1' 200 38518 'http://windyzhou.org/' 'Mozilla/5.0 (Linux; U; Android 15; en-US; 2201122C Build/AQ3A.241006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.80 UCBrowser/14.2.5.1347 Mobile Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 14:09:04 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:14:09:04 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 14:09:04 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:14:09:04 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 15:13:20 +0000] [7] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m [2025-03-15 15:13:20 +0000] [7] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:15:13:20 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:15:13:20 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 15:53:54 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 15:53:54 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:15:53:54 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:15:53:54 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+[36mweb_1  |[0m [2025-03-15 16:33:20 +0000] [8] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m [2025-03-15 16:33:20 +0000] [8] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:16:33:20 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:16:33:20 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 16:39:05 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:16:39:05 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 16:39:05 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:16:39:05 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 16:39:06 +0000] [7] [DEBUG] GET /favicon.ico
+[36mweb_1  |[0m [2025-03-15 16:39:06 +0000] [7] [DEBUG] GET /favicon.ico
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:16:39:06 +0000] 'GET /favicon.ico HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:16:39:06 +0000] 'GET /favicon.ico HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 17:40:46 +0000] [8] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m [2025-03-15 17:40:46 +0000] [8] [DEBUG] GET /robots.txt
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:17:40:46 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:17:40:46 +0000] 'GET /robots.txt HTTP/1.1' 404 207 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 17:57:17 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 17:57:17 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:17:57:17 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:17:57:17 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 17:57:18 +0000] [7] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m [2025-03-15 17:57:18 +0000] [7] [DEBUG] GET /static/180x180.png
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:17:57:18 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:17:57:18 +0000] 'GET /static/180x180.png HTTP/1.1' 200 0 '-' 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)'
+[36mweb_1  |[0m [2025-03-15 18:06:21 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 18:06:21 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:18:06:21 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:18:06:21 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+[36mweb_1  |[0m [2025-03-15 19:17:53 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:19:17:53 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 19:17:53 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:19:17:53 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 19:17:53 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 19:17:53 +0000] [7] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:19:17:53 +0000] 'GET / HTTP/1.1' 200 32154 'http://windyzhou.org' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:19:17:53 +0000] 'GET / HTTP/1.1' 200 32154 'http://windyzhou.org' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 20:15:32 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:20:15:32 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+[36mweb_1  |[0m [2025-03-15 20:15:32 +0000] [8] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:20:15:32 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+[36mweb_1  |[0m [2025-03-15 20:53:20 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:20:53:20 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 20:53:20 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:20:53:20 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 20:53:21 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 20:53:21 +0000] [10] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:20:53:21 +0000] 'GET / HTTP/1.1' 200 32154 'http://windyzhou.org' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:20:53:21 +0000] 'GET / HTTP/1.1' 200 32154 'http://windyzhou.org' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 21:02:16 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m [2025-03-15 21:02:16 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:21:02:16 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:21:02:16 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [1] [INFO] Handling signal: term
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [9] [INFO] Worker exiting (pid: 9)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [7] [INFO] Worker exiting (pid: 7)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [8] [INFO] Worker exiting (pid: 8)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [10] [INFO] Worker exiting (pid: 10)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [1] [INFO] Handling signal: term
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [9] [INFO] Worker exiting (pid: 9)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [7] [INFO] Worker exiting (pid: 7)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [8] [INFO] Worker exiting (pid: 8)
+[36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [10] [INFO] Worker exiting (pid: 10)
+[36mweb_tt_ss_web_1 exited with code 137
+[0m[36mweb_tt_ss_web_1 exited with code 137
+[0m

@@ -14,6 +14,7 @@ def index():
     if request.method == 'POST':
         if 'url' in request.form:
             url = request.form['url']
+            url = url.split(' ',1)[0]
             return load_from_url(url)
     
     return render_template('index.html')
@@ -63,22 +64,6 @@ def load_from_url(url):
         page.quit()
         print("已关闭浏览器")
 
-
-# 定义一个专门的清理函数
-def clean_text(text):
-    if not text:
-        return ""
-    
-    # 只替换特殊空白字符，保留HTML标签
-    text = text.replace('\xa0', ' ')
-    
-    # 去除首尾空白
-    text = text.strip()
-    
-    # 移除所有下划线，但保留下划线上的字符
-    text = text.replace('_', '')
-    
-    return text
 
 
 if __name__ == '__main__':

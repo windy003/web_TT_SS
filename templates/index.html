@@ -76,7 +76,7 @@
             color: black;
             text-decoration: none;
         }
-        .chapter-info {
+        .title-info {
             text-align: center;
             font-size: 24px;
             font-weight: bold;
@@ -464,12 +464,12 @@
             <button id="showPanelBtn" class="panel-toggle-btn">显示控制面板</button>
         </div>
         
-        <div class="chapter-info" id="chapterInfo">
-            {% if title %}<h2>{{ title }}</h2>{% endif %}
-        </div>
         
         <!-- 使用div替代p标签 -->
         <div id="div_tag" >
+            {% if title %}<h2>{{ title }}</h2>{% endif %}
+            
+            
             {% if content %}{{ content | safe }}{% endif %}
         </div>
     </div>
@@ -848,7 +848,7 @@
             loadLastInputs();
 
             // 获取章节信息元素
-            const chapterInfo = document.getElementById('chapterInfo');
+            const titleInfo = document.getElementById('titleInfo');
             
             // 添加一个函数来更新页面标题
             function updatePageTitle() {
@@ -856,12 +856,12 @@
                 let chapterTitle = "";
                 
                 // 尝试获取 h2 标签中的内容
-                const h2Element = chapterInfo.querySelector('h2');
+                const h2Element = titleInfo.querySelector('h2');
                 if (h2Element) {
                     chapterTitle = h2Element.textContent.trim();
                 } else {
                     // 如果没有 h2 标签，则使用整个元素的文本内容
-                    chapterTitle = chapterInfo.textContent.trim();
+                    chapterTitle = titleInfo.textContent.trim();
                 }
                 
                 // 如果有章节标题，则更新页面标题
@@ -881,7 +881,7 @@
             });
             
             // 配置 observer 监听章节信息元素的子节点和文本变化
-            observer.observe(chapterInfo, {
+            observer.observe(titleInfo, {
                 childList: true,
                 subtree: true,
                 characterData: true
