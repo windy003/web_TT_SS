@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    image: windy007008/web_tt_ss_c  :latest
+    image: windy007008/web_tt_ss_c:latest
     ports:
       - "5005:5005"  
     environment:
