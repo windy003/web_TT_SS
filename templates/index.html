@@ -447,6 +447,12 @@
             opacity: 1; !important /* 确保不透明 */
         }
 
+        #div_tag {
+            word-wrap: break-word;  /* 旧版浏览器支持 */
+            overflow-wrap: break-word;  /* 新版标准 */
+            white-space: normal;  /* 确保文本正常换行 */
+        }
+
     </style>
 </head>
 <body>
