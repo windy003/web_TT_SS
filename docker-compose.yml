@@ -3,9 +3,9 @@ version: '3.8'
 services:
   web:
     build: .
-    image: windy007008/web_tt_ss:latest
+    image: windy007008/web_tt_ss_c  :latest
     ports:
-      - "5003:5003"  
+      - "5005:5005"  
     environment:
       - HTTP_PROXY=http://host.docker.internal:10809
       - HTTPS_PROXY=http://host.docker.internal:10809
@@ -24,7 +24,7 @@ services:
               "--log-level", "debug",     # 开发环境使用 debug 级别
               "--access-logfile", "-",
               "--error-logfile", "-",
-              "--bind", "0.0.0.0:5003",
+              "--bind", "0.0.0.0:5005",
               "app:app"]
 
 

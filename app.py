@@ -60,20 +60,6 @@ def load_from_url(url):
         
         print(f"文章标题: {title}")
         
-        # 尝试获取作者
-        author = "未知作者"
-        try:
-            # 尝试找到作者信息
-            author_element = page.ele('xpath://span[contains(@style, "color: rgb(136, 136, 136)") and contains(text(), "文｜")]', timeout=1)
-            if author_element and author_element.text.strip():
-                author = author_element.text.strip().replace("文｜", "").strip()
-        except:
-            pass
-        
-        print(f"文章作者: {author}")
-        
-        # 尝试获取发布时间 - 今日头条通常没有明确的时间标记
-        publish_time = "未知时间"
         
         # 获取文章内容 - 今日头条特定结构
         content = ""
