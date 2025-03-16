@@ -29,40 +29,105 @@ def load_from_url(url):
     """
     # 创建配置对象
     options = ChromiumOptions()
-    options.set_argument('--headless=new')  # 使用新的无头模式
-    options.set_argument('--no-sandbox')    # 在Linux系统中添加此参数
-    options.set_argument('--disable-dev-shm-usage')  # 避免内存不足问题
+    options.set_argument('--headless=new')
+    options.set_argument('--no-sandbox')
+    options.set_argument('--disable-dev-shm-usage')
+    options.set_browser_path('/usr/bin/google-chrome-stable')
     
-    # 使用配置创建页面对象
-    page = ChromiumPage(options)
-    print("已启动无头浏览器...")
-    
+    page = None
     try:
+        page = ChromiumPage(options)
+        print("已启动无头浏览器...")
+        
         # 访问文章页面
         page.get(url)
         print("正在加载页面...")
-        time.sleep(2)  # 等待页面加载
+        time.sleep(5)  # 等待页面加载
         
-        # 获取文章标题
-        title = page.ele('xpath://h1').text
+        # 获取页面标题
+        title = page.title
+        print(f"页面标题: {title}")
+        
+        # 尝试获取文章标题 - 今日头条特定结构
+        try:
+            # 尝试获取文章标题元素
+            title_element = page.ele('xpath://h1[@class="article-title"]', timeout=2)
+            if title_element and title_element.text.strip():
+                title = title_element.text.strip()
+        except:
+            # 如果找不到特定标题元素，使用页面标题
+            pass
+        
         print(f"文章标题: {title}")
         
-        # 获取文章内容
-        content_elements = page.eles('xpath://article//p')
-        content = '\n'.join([ele.text for ele in content_elements if ele.text])
+        # 尝试获取作者
+        author = "未知作者"
+        try:
+            # 尝试找到作者信息
+            author_element = page.ele('xpath://span[contains(@style, "color: rgb(136, 136, 136)") and contains(text(), "文｜")]', timeout=1)
+            if author_element and author_element.text.strip():
+                author = author_element.text.strip().replace("文｜", "").strip()
+        except:
+            pass
         
+        print(f"文章作者: {author}")
         
+        # 尝试获取发布时间 - 今日头条通常没有明确的时间标记
+        publish_time = "未知时间"
         
+        # 获取文章内容 - 今日头条特定结构
+        content = ""
+        try:
+            # 获取所有section元素，这些元素包含文章段落
+            section_elements = page.eles('xpath://section[@style="line-height: 2em;"]')
+            
+            paragraphs = []
+            for section in section_elements:
+                # 获取section中的span元素，这些元素包含文本
+                span_elements = section.eles('xpath:.//span')
+                for span in span_elements:
+                    if span.text and span.text.strip():
+                        paragraphs.append(span.text.strip())
+            
+            if paragraphs:
+                content = '\n\n'.join(paragraphs)
+            
+            # 如果上面的方法没有获取到内容，尝试直接获取div_tag中的内容
+            if not content:
+                content_div = page.ele('xpath://div[@id="js_content"]', timeout=2)
+                if content_div:
+                    content = content_div.text.strip()
+        except Exception as e:
+            print(f"提取内容时出错: {e}")
         
-        return render_template('index.html', title=title, content=content)
+        # 如果仍然没有内容，尝试获取所有可见文本
+        if not content:
+            try:
+                # 获取所有可见的段落文本
+                p_elements = page.eles('xpath://p[string-length(text()) > 10]')
+                paragraphs = [p.text.strip() for p in p_elements if p.text and p.text.strip()]
+                if paragraphs:
+                    content = '\n\n'.join(paragraphs)
+            except:
+                pass
+        
+        # 格式化内容，将换行符转换为HTML换行
+        formatted_content = content.replace('\n', '<br>')
+        
+        return render_template('index.html', 
+                              title=title, 
+                              author=author, 
+                              publish_time=publish_time, 
+                              content=formatted_content,
+                              url=url)
     
     except Exception as e:
         print(f"爬取过程中出现错误: {e}")
-        return None
+        return render_template('index.html', error_message=f"爬取失败: {str(e)}")
     finally:
-        # 关闭浏览器
-        page.quit()
-        print("已关闭浏览器")
+        if page:
+            page.quit()
+            print("已关闭浏览器")
 
 
 

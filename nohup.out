@@ -824,4 +824,328 @@ Attaching to web_tt_ss_web_1
 [36mweb_1  |[0m [2025-03-15 21:07:03 +0000] [10] [INFO] Worker exiting (pid: 10)
 [36mweb_tt_ss_web_1 exited with code 137
 [0m[36mweb_tt_ss_web_1 exited with code 137
-[0m
+[0mStarting web_tt_ss_web_1 ... 
+Starting web_tt_ss_web_1 ... done
+Attaching to web_tt_ss_web_1
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [1] [DEBUG] Current configuration:
+[36mweb_1  |[0m   config: ./gunicorn.conf.py
+[36mweb_1  |[0m   wsgi_app: None
+[36mweb_1  |[0m   bind: ['0.0.0.0:5003']
+[36mweb_1  |[0m   backlog: 2048
+[36mweb_1  |[0m   workers: 4
+[36mweb_1  |[0m   worker_class: sync
+[36mweb_1  |[0m   threads: 1
+[36mweb_1  |[0m   worker_connections: 1000
+[36mweb_1  |[0m   max_requests: 1000
+[36mweb_1  |[0m   max_requests_jitter: 50
+[36mweb_1  |[0m   timeout: 120
+[36mweb_1  |[0m   graceful_timeout: 30
+[36mweb_1  |[0m   keepalive: 5
+[36mweb_1  |[0m   limit_request_line: 4094
+[36mweb_1  |[0m   limit_request_fields: 100
+[36mweb_1  |[0m   limit_request_field_size: 8190
+[36mweb_1  |[0m   reload: False
+[36mweb_1  |[0m   reload_engine: auto
+[36mweb_1  |[0m   reload_extra_files: []
+[36mweb_1  |[0m   spew: False
+[36mweb_1  |[0m   check_config: False
+[36mweb_1  |[0m   print_config: False
+[36mweb_1  |[0m   preload_app: False
+[36mweb_1  |[0m   sendfile: None
+[36mweb_1  |[0m   reuse_port: False
+[36mweb_1  |[0m   chdir: /app
+[36mweb_1  |[0m   daemon: False
+[36mweb_1  |[0m   raw_env: []
+[36mweb_1  |[0m   pidfile: None
+[36mweb_1  |[0m   worker_tmp_dir: None
+[36mweb_1  |[0m   user: 1000
+[36mweb_1  |[0m   group: 1000
+[36mweb_1  |[0m   umask: 0
+[36mweb_1  |[0m   initgroups: False
+[36mweb_1  |[0m   tmp_upload_dir: None
+[36mweb_1  |[0m   secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+[36mweb_1  |[0m   forwarded_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   accesslog: -
+[36mweb_1  |[0m   disable_redirect_access_to_syslog: False
+[36mweb_1  |[0m   access_log_format: %(h)s %(l)s %(u)s %(t)s '%(r)s' %(s)s %(b)s '%(f)s' '%(a)s'
+[36mweb_1  |[0m   errorlog: -
+[36mweb_1  |[0m   loglevel: debug
+[36mweb_1  |[0m   capture_output: False
+[36mweb_1  |[0m   logger_class: gunicorn.glogging.Logger
+[36mweb_1  |[0m   logconfig: None
+[36mweb_1  |[0m   logconfig_dict: {}
+[36mweb_1  |[0m   syslog_addr: udp://localhost:514
+[36mweb_1  |[0m   syslog: False
+[36mweb_1  |[0m   syslog_prefix: None
+[36mweb_1  |[0m   syslog_facility: user
+[36mweb_1  |[0m   enable_stdio_inheritance: False
+[36mweb_1  |[0m   statsd_host: None
+[36mweb_1  |[0m   dogstatsd_tags: 
+[36mweb_1  |[0m   statsd_prefix: 
+[36mweb_1  |[0m   proc_name: None
+[36mweb_1  |[0m   default_proc_name: app:app
+[36mweb_1  |[0m   pythonpath: None
+[36mweb_1  |[0m   paste: None
+[36mweb_1  |[0m   on_starting: <function OnStarting.on_starting at 0x7f6aa88474c0>
+[36mweb_1  |[0m   on_reload: <function OnReload.on_reload at 0x7f6aa88475e0>
+[36mweb_1  |[0m   when_ready: <function WhenReady.when_ready at 0x7f6aa8847700>
+[36mweb_1  |[0m   pre_fork: <function Prefork.pre_fork at 0x7f6aa8847820>
+[36mweb_1  |[0m   post_fork: <function Postfork.post_fork at 0x7f6aa8847940>
+[36mweb_1  |[0m   post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f6aa8847a60>
+[36mweb_1  |[0m   worker_int: <function WorkerInt.worker_int at 0x7f6aa8847b80>
+[36mweb_1  |[0m   worker_abort: <function WorkerAbort.worker_abort at 0x7f6aa8847ca0>
+[36mweb_1  |[0m   pre_exec: <function PreExec.pre_exec at 0x7f6aa8847dc0>
+[36mweb_1  |[0m   pre_request: <function PreRequest.pre_request at 0x7f6aa8847ee0>
+[36mweb_1  |[0m   post_request: <function PostRequest.post_request at 0x7f6aa8847f70>
+[36mweb_1  |[0m   child_exit: <function ChildExit.child_exit at 0x7f6aa885b0d0>
+[36mweb_1  |[0m   worker_exit: <function WorkerExit.worker_exit at 0x7f6aa885b1f0>
+[36mweb_1  |[0m   nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f6aa885b310>
+[36mweb_1  |[0m   on_exit: <function OnExit.on_exit at 0x7f6aa885b430>
+[36mweb_1  |[0m   proxy_protocol: False
+[36mweb_1  |[0m   proxy_allow_ips: ['127.0.0.1']
+[36mweb_1  |[0m   keyfile: None
+[36mweb_1  |[0m   certfile: None
+[36mweb_1  |[0m   ssl_version: 2
+[36mweb_1  |[0m   cert_reqs: 0
+[36mweb_1  |[0m   ca_certs: None
+[36mweb_1  |[0m   suppress_ragged_eofs: True
+[36mweb_1  |[0m   do_handshake_on_connect: False
+[36mweb_1  |[0m   ciphers: None
+[36mweb_1  |[0m   raw_paste_global_conf: []
+[36mweb_1  |[0m   strip_header_spaces: False
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [1] [DEBUG] Arbiter booted
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [1] [INFO] Listening at: http://0.0.0.0:5003 (1)
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [1] [INFO] Using worker: sync
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [7] [INFO] Booting worker with pid: 7
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [8] [INFO] Booting worker with pid: 8
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [9] [INFO] Booting worker with pid: 9
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [10] [INFO] Booting worker with pid: 10
+[36mweb_1  |[0m [2025-03-15 21:15:58 +0000] [1] [DEBUG] 4 workers
+[36mweb_1  |[0m [2025-03-15 21:16:10 +0000] [9] [DEBUG] GET /
+[36mweb_1  |[0m 172.19.0.1 - - [15/Mar/2025:21:16:10 +0000] 'GET / HTTP/1.1' 200 32154 '-' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36'
+web_tt_ss_web_1 is up-to-date
+Exception in thread Thread-3 (tail_container_logs):
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 700, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 395, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/docker/transport/unixconn.py", line 30, in connect
+    sock.connect(self.unix_socket)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 756, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 534, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 700, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 395, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/docker/transport/unixconn.py", line 30, in connect
+    sock.connect(self.unix_socket)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionRefusedError(111, 'Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3/dist-packages/compose/cli/log_printer.py", line 168, in tail_container_logs
+    queue.put(QueueItem.new(presenter.color_func(wait_on_exit(container))))
+  File "/usr/lib/python3/dist-packages/compose/cli/log_printer.py", line 185, in wait_on_exit
+    exit_code = container.wait()
+  File "/usr/lib/python3/dist-packages/compose/container.py", line 268, in wait
+    return self.client.wait(self.id).get('StatusCode', 127)
+  File "/usr/lib/python3/dist-packages/docker/utils/decorators.py", line 19, in wrapped
+    return f(self, resource_id, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/docker/api/container.py", line 1303, in wait
+    res = self._post(url, timeout=timeout, params=params)
+  File "/usr/lib/python3/dist-packages/docker/utils/decorators.py", line 46, in inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/docker/api/client.py", line 233, in _post
+    return self.post(url, **self._set_request_timeout(kwargs))
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 592, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionRefusedError(111, 'Connection refused'))
+web_tt_ss_web_1 is up-to-date
+2025-03-15T21:51:59Z INF Starting tunnel tunnelID=a865f4f0-b48a-409e-94ad-2e87e03920da
+2025-03-15T21:51:59Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-15T21:51:59Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-15T21:51:59Z INF Settings: map[cred-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json credentials-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json]
+2025-03-15T21:51:59Z INF Generated Connector ID: 49cd95fa-f9ec-4d1a-a3bb-f29ae2213559
+2025-03-15T21:51:59Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-15T21:51:59Z INF Initial protocol quic
+2025-03-15T21:51:59Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T21:51:59Z INF ICMP proxy will use fe80::215:5dff:fe08:3fa4 in zone eth0 as source for IPv6
+2025-03-15T21:51:59Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T21:51:59Z INF ICMP proxy will use fe80::215:5dff:fe08:3fa4 in zone eth0 as source for IPv6
+2025-03-15T21:51:59Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-03-15T21:52:00Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.57
+2025-03-15T21:52:00Z INF Registered tunnel connection connIndex=0 connection=6c00f08b-96c9-42b7-8d79-10f47ffc5d0b event=0 ip=198.41.192.57 location=lax09 protocol=quic
+2025-03-15T21:52:00Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.73
+2025-03-15T21:52:01Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.7
+2025-03-15T21:52:02Z INF Registered tunnel connection connIndex=2 connection=604eee61-101d-44ce-8e80-2a66a781971e event=0 ip=198.41.192.7 location=lax08 protocol=quic
+2025-03-15T21:52:02Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-15T21:52:03Z INF Registered tunnel connection connIndex=3 connection=94ed89ea-42f4-49bc-9185-b970d71dfedf event=0 ip=198.41.200.33 location=sjc07 protocol=quic
+2025-03-15T21:52:05Z WRN Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1 event=0 ip=198.41.200.73
+2025-03-15T21:52:05Z INF Retrying connection in up to 2s connIndex=1 event=0 ip=198.41.200.73
+2025-03-15T21:52:07Z WRN Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=1
+2025-03-15T21:52:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.233
+2025-03-15T21:52:15Z INF Registered tunnel connection connIndex=1 connection=9d754b4c-1d90-4d80-922d-b7979b5d1b5d event=0 ip=198.41.200.233 location=lax01 protocol=quic
+2025-03-15T23:15:09Z INF Starting tunnel tunnelID=a865f4f0-b48a-409e-94ad-2e87e03920da
+2025-03-15T23:15:09Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-15T23:15:09Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-15T23:15:09Z INF Settings: map[cred-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json credentials-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json]
+2025-03-15T23:15:09Z INF Generated Connector ID: 70ad5bbe-43df-41fa-bfed-076fd80ae8db
+2025-03-15T23:15:09Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-15T23:15:09Z INF Initial protocol quic
+2025-03-15T23:15:09Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T23:15:09Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-15T23:15:09Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T23:15:09Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-15T23:15:09Z INF Starting metrics server on 127.0.0.1:20244/metrics
+2025-03-15T23:15:09Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.73
+2025-03-15T23:15:11Z INF Starting tunnel tunnelID=a865f4f0-b48a-409e-94ad-2e87e03920da
+2025-03-15T23:15:11Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-15T23:15:11Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-15T23:15:11Z INF Settings: map[cred-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json credentials-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json]
+2025-03-15T23:15:11Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-15T23:15:11Z INF Generated Connector ID: 22ff85f6-7bc4-4704-9220-a374237dbdc7
+2025-03-15T23:15:11Z INF Initial protocol quic
+2025-03-15T23:15:11Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T23:15:11Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-15T23:15:12Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T23:15:12Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-15T23:15:12Z INF Starting metrics server on 127.0.0.1:20245/metrics
+2025-03-15T23:15:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.57
+2025-03-15T23:15:12Z INF Registered tunnel connection connIndex=0 connection=9eacbc9f-41ac-4846-b012-ff3f323ed4c9 event=0 ip=198.41.192.57 location=lax09 protocol=quic
+2025-03-15T23:15:12Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.233
+2025-03-15T23:15:13Z INF Registered tunnel connection connIndex=1 connection=125f4573-e4d2-4930-8d6d-c9e3ac4fc303 event=0 ip=198.41.200.233 location=sjc07 protocol=quic
+2025-03-15T23:15:13Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.63
+2025-03-15T23:15:14Z INF Registered tunnel connection connIndex=2 connection=d712e105-5781-45c7-9c3f-42e65a33e558 event=0 ip=198.41.200.63 location=lax01 protocol=quic
+2025-03-15T23:15:14Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.107
+2025-03-15T23:15:14Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.73
+2025-03-15T23:15:14Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.73
+2025-03-15T23:15:15Z INF Registered tunnel connection connIndex=3 connection=614d03c6-f589-48d0-bb65-456d63968b87 event=0 ip=198.41.192.107 location=lax09 protocol=quic
+2025-03-15T23:15:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.33
+2025-03-15T23:15:15Z INF Registered tunnel connection connIndex=0 connection=8890cf65-9164-4b95-b6d0-3edf7364fbcd event=0 ip=198.41.200.33 location=lax06 protocol=quic
+2025-03-15T23:15:15Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.107
+2025-03-15T23:15:16Z INF Registered tunnel connection connIndex=1 connection=fff5e2a8-93ee-4cbb-a35e-127a1947e7fe event=0 ip=198.41.192.107 location=lax09 protocol=quic
+2025-03-15T23:15:16Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.7
+2025-03-15T23:15:17Z INF Registered tunnel connection connIndex=2 connection=0b130399-0113-4d57-a989-96566768b1ef event=0 ip=198.41.192.7 location=lax08 protocol=quic
+2025-03-15T23:15:17Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.13
+2025-03-15T23:15:18Z INF Registered tunnel connection connIndex=3 connection=0be14cb9-aada-4075-be07-9246f541313d event=0 ip=198.41.200.13 location=lax01 protocol=quic
+2025-03-15T23:15:20Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-03-15T23:15:20Z ERR Failed to serve tunnel connection error="context canceled" connIndex=0 event=0 ip=198.41.200.33
+2025-03-15T23:15:20Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.33
+2025-03-15T23:15:20Z ERR Failed to serve tunnel connection error="context canceled" connIndex=2 event=0 ip=198.41.192.7
+2025-03-15T23:15:20Z INF Retrying connection in up to 1s connIndex=2 event=0 ip=198.41.192.7
+2025-03-15T23:15:20Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.192.107
+2025-03-15T23:15:20Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=1 event=0 ip=198.41.192.107
+2025-03-15T23:15:20Z INF Retrying connection in up to 1s connIndex=1 event=0 ip=198.41.192.107
+2025-03-15T23:15:20Z ERR Failed to serve tunnel connection error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.13
+2025-03-15T23:15:20Z ERR Serve tunnel error error="Application error 0x0 (remote)" connIndex=3 event=0 ip=198.41.200.13
+2025-03-15T23:15:20Z INF Retrying connection in up to 1s connIndex=3 event=0 ip=198.41.200.13
+2025-03-15T23:15:20Z ERR no more connections active and exiting
+2025-03-15T23:15:20Z INF Tunnel server stopped
+2025-03-15T23:15:20Z ERR icmp router terminated error="context canceled"
+2025-03-15T23:15:20Z INF Metrics server stopped
+2025-03-15T23:21:53Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=1 event=1 ingressRule=0 originService=http://127.0.0.1:5003
+2025-03-15T23:21:53Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=1 dest=https://windyzhou.org/ event=0 ip=198.41.200.233 type=http
+2025-03-15T23:58:56Z INF Starting tunnel tunnelID=a865f4f0-b48a-409e-94ad-2e87e03920da
+2025-03-15T23:58:56Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-15T23:58:56Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-15T23:58:56Z INF Settings: map[cred-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json credentials-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json]
+2025-03-15T23:58:56Z INF Generated Connector ID: e304802a-b113-4e3a-8c35-ab1e7d0a83a6
+2025-03-15T23:58:56Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-15T23:58:56Z INF Initial protocol quic
+2025-03-15T23:58:56Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T23:58:56Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-15T23:58:56Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-15T23:58:56Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-15T23:58:56Z INF Starting metrics server on 127.0.0.1:41835/metrics
+2025-03-15T23:58:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.23
+2025-03-15T23:58:56Z INF Registered tunnel connection connIndex=0 connection=ec03427e-5506-46c3-8f4c-5f27f9e88053 event=0 ip=198.41.200.23 location=hkg10 protocol=quic
+2025-03-15T23:58:56Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.7
+2025-03-15T23:58:57Z INF Registered tunnel connection connIndex=1 connection=9643b0e5-e302-4f83-b7bc-e1806c1bcd41 event=0 ip=198.41.192.7 location=sjc06 protocol=quic
+2025-03-15T23:58:57Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.192.227
+2025-03-15T23:58:58Z INF Registered tunnel connection connIndex=2 connection=9879e628-0754-4a09-89c3-1ed605df1ac4 event=0 ip=198.41.192.227 location=lax08 protocol=quic
+2025-03-15T23:58:58Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.200.33
+2025-03-15T23:58:59Z INF Registered tunnel connection connIndex=3 connection=2b057fd3-70f6-4973-b972-1020c5644fc1 event=0 ip=198.41.200.33 location=hkg12 protocol=quic
+2025-03-16T00:05:44Z INF Starting tunnel tunnelID=a865f4f0-b48a-409e-94ad-2e87e03920da
+2025-03-16T00:05:44Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-16T00:05:44Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-16T00:05:44Z INF Settings: map[cred-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json credentials-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json]
+2025-03-16T00:05:44Z INF Generated Connector ID: 269fbdb9-2803-4921-ac58-9db7b77379e8
+2025-03-16T00:05:44Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-16T00:05:44Z INF Initial protocol quic
+2025-03-16T00:05:44Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T00:05:44Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-16T00:05:44Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T00:05:44Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-16T00:05:44Z INF Starting metrics server on 127.0.0.1:41383/metrics
+2025-03-16T00:05:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.200.53
+2025-03-16T00:05:44Z INF Registered tunnel connection connIndex=0 connection=d9dd44f9-26ae-4912-90c3-10c19b383e81 event=0 ip=198.41.200.53 location=lax01 protocol=quic
+2025-03-16T00:05:44Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.192.57
+2025-03-16T00:05:45Z INF Registered tunnel connection connIndex=1 connection=25728292-d4e1-4de5-8314-e73a42386ed8 event=0 ip=198.41.192.57 location=hkg01 protocol=quic
+2025-03-16T00:05:45Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.63
+2025-03-16T00:05:46Z INF Registered tunnel connection connIndex=2 connection=bdcd29e7-d653-4812-9df2-ef830c27cd3a event=0 ip=198.41.200.63 location=sjc05 protocol=quic
+2025-03-16T00:05:46Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.227
+2025-03-16T00:05:47Z INF Registered tunnel connection connIndex=3 connection=d18c047c-3229-4779-98c0-eaa24979cdef event=0 ip=198.41.192.227 location=hkg09 protocol=quic
+2025-03-16T00:08:48Z INF Starting tunnel tunnelID=a865f4f0-b48a-409e-94ad-2e87e03920da
+2025-03-16T00:08:48Z INF Version 2025.2.1 (Checksum afdfadd1ef552e66bffc35246fe30a9bd578356d2d386de95585ccfc432472b8)
+2025-03-16T00:08:48Z INF GOOS: linux, GOVersion: go1.22.10, GoArch: amd64
+2025-03-16T00:08:48Z INF Settings: map[cred-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json credentials-file:/root/.cloudflared/a865f4f0-b48a-409e-94ad-2e87e03920da.json]
+2025-03-16T00:08:48Z INF Generated Connector ID: 88c1313e-3a38-4fe3-b9f9-19edb1225c36
+2025-03-16T00:08:48Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2025-03-16T00:08:48Z INF Initial protocol quic
+2025-03-16T00:08:48Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T00:08:48Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-16T00:08:48Z INF ICMP proxy will use 172.23.45.17 as source for IPv4
+2025-03-16T00:08:48Z INF ICMP proxy will use fe80::215:5dff:fe54:9d47 in zone eth0 as source for IPv6
+2025-03-16T00:08:48Z INF Starting metrics server on 127.0.0.1:41437/metrics
+2025-03-16T00:08:48Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=0 event=0 ip=198.41.192.227
+2025-03-16T00:08:49Z INF Registered tunnel connection connIndex=0 connection=a58b73f4-66b9-4419-b5f0-dbd7473f8e07 event=0 ip=198.41.192.227 location=lax09 protocol=quic
+2025-03-16T00:08:49Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=1 event=0 ip=198.41.200.13
+2025-03-16T00:08:50Z INF Registered tunnel connection connIndex=1 connection=4f5b335f-799b-471d-b19f-3ca78cd951cf event=0 ip=198.41.200.13 location=sjc07 protocol=quic
+2025-03-16T00:08:50Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=2 event=0 ip=198.41.200.23
+2025-03-16T00:08:51Z INF Registered tunnel connection connIndex=2 connection=a0bc3c08-af08-48b7-b128-a08bbf4af2eb event=0 ip=198.41.200.23 location=lax06 protocol=quic
+2025-03-16T00:08:51Z INF Using [CurveID(4588) CurveID(25497) CurveP256] as curve preferences connIndex=3 event=0 ip=198.41.192.167
+2025-03-16T00:08:52Z INF Registered tunnel connection connIndex=3 connection=91dfb0d9-f5e6-4a7c-b4c2-a70fe6f120dd event=0 ip=198.41.192.167 location=lax08 protocol=quic
